@@ -49,7 +49,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
               ))
         ],
       ),
-      body: SafeArea(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(left: 20.0, top: 20),
           child: Column(
@@ -138,7 +138,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(15),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage("assets/images/sala.png"),
                                 fit: BoxFit.cover
                               ),
@@ -207,7 +207,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                             child: Stack(
                           children: [
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   color: Colors.blue,
                                   borderRadius: BorderRadius.vertical(
                                     top: Radius.circular(20),
